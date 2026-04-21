@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+double triangleArea ( double base, double height ) {
+    return 0.5 * base * height ;
+}
+
+double rectangleArea ( double length, double width) {
+    return length * width;
+}
+
+double circleArea ( double radius ) {
+    return 3.142 * radius * radius;
+}
+
+int main() {
+    cout << "What area do you want to calculate, "
+            "Choose:\n 1. Triangle\n 2. Rectangle\n 3. Circle\n ";
+
+    int choice;
+    cin >> choice;
+
+
+    if ( choice == 1 ) {
+        double base, height;
+        cout << "input base and height: " << endl;
+        cin >> base >> height;
+        cout << ( 0.5 * base * height ) << endl;
+    }
+
+    else if ( choice == 2 ) {
+        double length, width;
+        cout << "input length and width: " << endl;
+        cin >> length >> width;
+        cout << ( length * width) << endl;
+    }
+
+    else {
+        double radius;
+        cout << "Input radius: ";
+        cin >> radius;
+        cout << 3.142 * radius * radius << endl;
+    }
+    return 0;
+}
