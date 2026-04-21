@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Input two numbers: ";
+    double x;
+    double y;
+    cin >> x >> y;
+
+    double addition = x + y;
+    cout << "addition = " << addition << endl;
+
+    double subtraction = x - y;
+    cout << "subtraction = " << subtraction <<endl;
+
+    double multiplication = x * y;
+    cout << "multiplication = " << multiplication <<endl;
+
+    if (y != 0 ) {
+        double division = x / y;
+        cout << "division = " << division << endl;
+    }else {
+        cout << "cannot divide by zero";
+    }
+    return 0;
+}
